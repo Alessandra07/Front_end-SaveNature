@@ -83,8 +83,8 @@ function Login() {
                             <Button type='submit' variant='contained' className='btnLo , font'>
                                 Logar
                             </Button>
-                            <Link to='/' >
-                                <Button type='submit' variant='contained' className='botoes , font , text-decorator-none'>
+                            <Link to='/' className='text-decorator-none'>
+                                <Button type='submit' variant='contained' className='botoes , font'>
                                     cancelar
                                 </Button>
                             </Link>
