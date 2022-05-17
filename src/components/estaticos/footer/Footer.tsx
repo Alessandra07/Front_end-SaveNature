@@ -1,7 +1,7 @@
 import React from 'react';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import CallIcon from '@mui/icons-material/Call';
 import {Typography, Box, Grid } from '@material-ui/core';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
@@ -21,14 +21,19 @@ function Footer() {
                 <Grid alignItems="center" item xs={12}>
                     <Box style={{ backgroundColor: "#958143", height: "120px" }}>
                         <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center">
-                            <Typography variant="h5" align="center" gutterBottom style={{ color: "white" }}>Siga-nos nas redes sociais: </Typography>
+                            <Typography variant="h5" align="center" gutterBottom className=' font , org '>Siga-nos nas redes sociais: </Typography>
                         </Box>
                         <Box display="flex" alignItems="center" justifyContent="center">
                             
                             <a href="https://www.instagram.com/savenaturegen/" target="_blank" rel="noopener noreferrer">
                                 <InstagramIcon style={{ fontSize: 60, color: "white" }} />
                             </a>
-                            
+                            <a href="https://www.gmail.com.br/" target="_blank" rel="noopener noreferrer">
+                                <MailOutlineIcon style={{ fontSize: 60, color: "white" }} />
+                            </a>
+                            <a href="https://www.google.com.br/" target="_blank" rel="noopener noreferrer">
+                                <CallIcon style={{ fontSize: 60, color: "white" }} />
+                            </a>
                         </Box>
                     </Box>
                     <Box style={{ backgroundColor: "#8B4513", height: "60px" }}>

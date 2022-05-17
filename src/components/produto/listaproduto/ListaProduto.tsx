@@ -55,22 +55,22 @@ function ListaProduto() {
           <Box m={2} >
             <Card variant="outlined">
               <CardContent>
-                <Typography color="textSecondary" gutterBottom>
+                <Typography color="textSecondary" gutterBottom className='font'>
                   Produtos
                 </Typography>
-                <Typography variant="h5" component="h2">
+                <Typography variant="h5" component="h2" className='font' >
                   {produto.nomeProduto}
                 </Typography>
-                <Typography variant="h5" component="h2">
+                <Typography variant="h5" component="h2" className='font' >
                   R$: {produto.preco}
                 </Typography>
-                <Typography variant="h5" component="h2">
+                <Typography variant="h5" component="h2" className='font' >
                  Qtd: {produto.quantidade}
                 </Typography>
-                <Typography variant="body2" component="p">
+                <Typography variant="body2" component="p" className='font' >
                   {produto.descricaoProduto}
                 </Typography>
-                <Typography variant="body2" component="p">
+                <Typography variant="body2" component="p" className='font' >
                   {produto.categoria?.nomeCategoria}
                 </Typography>
               </CardContent>
@@ -79,14 +79,14 @@ function ListaProduto() {
 
                   <Link to={`/formularioProduto/${produto.id}`} className="text-decorator-none" >
                     <Box mx={1}>
-                      <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                      <Button variant="contained" className= "botoes ,marginLeft , font" size='small' color="primary" >
                         atualizar
                       </Button>
                     </Box>
                   </Link>
                   <Link to={`/deletarProduto/${produto.id}`} className="text-decorator-none">
                     <Box mx={1}>
-                      <Button variant="contained" size='small' color="secondary">
+                      <Button variant="contained" size='small' className= "botoes1 , font " >
                         deletar
                       </Button>
                     </Box>

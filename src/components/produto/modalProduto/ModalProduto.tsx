@@ -60,7 +60,7 @@ function ModalProduto () {
     <div>
       <Button
         variant="outlined"
-        className="btnModal"
+        className="btnModal , font "
         onClick={handleOpen}>Novo Produto</Button>
       <Modal
         open={open}

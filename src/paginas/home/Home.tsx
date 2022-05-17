@@ -38,8 +38,8 @@ function Home(){
        <Grid container direction="row" justifyContent="center"  alignItems="center" style={{backgroundColor: "#ffffff"}}>
            <Grid alignItems="center"  item xs={6}>
                 <Box paddingX={20} >
-                    <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{color: "#BD8A44" , fontWeight: "bold "}}>Seja bem vindo(a)!</Typography>
-                    <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{color: "#BD8A44"}}>Ao Mercado da Sustentabilidade</Typography>
+                    <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='tx3 , font '>Seja bem vindo(a)!</Typography>
+                    <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='tx4 , font ' >Ao Mercado da Sustentabilidade</Typography>
                 </Box>
 
                 <Box display="flex" justifyContent="center">
@@ -48,7 +48,7 @@ function Home(){
                         </Box>
 
                         <Link to="/produto" className="text-decorator-none">
-                            <Button variant="outlined" style={{ borderColor: "white", backgroundColor: "#6B8E23", color: "white"}}>Ver Produtos</Button>
+                            <Button variant="outlined" className='nvpost , font'>Ver Produtos</Button>
                         </Link>
                 </Box>
            </Grid>

@@ -1,3 +1,15 @@
 .text-decorator-none{
     text-decoration: none;
 }
+
+.botoes{
+    border-color: white !important;
+    background-color: #6B8E23 !important;
+    color: white !important;
+}
+
+.botoes1{
+    border-color: white !important;
+    background-color: #816e33 !important;
+    color: white !important;
+}

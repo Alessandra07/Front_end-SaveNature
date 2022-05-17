@@ -8,6 +8,7 @@ import { busca, buscaId, post, put } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
+import { Link } from '@mui/material';
 
 
 function CadastroProduto() {
@@ -44,7 +45,7 @@ function CadastroProduto() {
     const [produto, setProduto] = useState<Produto>({
         id: 0,
         nomeProduto: '',
-        preco:  0,
+        preco: 0,
         quantidade: 0,
         descricaoProduto: '',
         categoria: null
@@ -65,7 +66,7 @@ function CadastroProduto() {
     }, [id])
 
     function newFunction() {
-        return ;
+        return;
     }
 
     async function getCategorias() {
@@ -142,9 +143,9 @@ function CadastroProduto() {
     return (
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
-                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro produto</Typography>
+                <Typography variant="h3" color="textSecondary" component="h1" align="center" className='text1 , font ' >Formulário de cadastro produto</Typography>
                 <TextField value={produto.nomeProduto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="nomeProduto" label="nomeProduto" variant="outlined" name="nomeProduto" margin="normal" fullWidth />
-                <TextField value= {produto.preco} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="preco" label="Preço(R$)" name= "preco" variant="outlined" margin="normal" fullWidth placeholder='R$ 0.00' />
+                <TextField value={produto.preco} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="preco" label="Preço(R$)" name="preco" variant="outlined" margin="normal" fullWidth placeholder='R$ 0.00' />
                 <TextField value={produto.quantidade} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="quantidade" label="quantidade" name="quantidade" variant="outlined" margin="normal" fullWidth />
                 <TextField value={produto.descricaoProduto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="descricaoProduto" label="descricaoProduto" name="descricaoProduto" variant="outlined" margin="normal" fullWidth />
 
@@ -165,9 +166,12 @@ function CadastroProduto() {
                         }
                     </Select>
                     <FormHelperText>Escolha uma Categoria para o produto</FormHelperText>
-                    <Button type="submit" variant="contained" color="primary">
+                    <Button type="submit" variant="contained" className='botoes1 , font '>
                         Finalizar
                     </Button>
+                    <Button type="submit" variant="contained" className="botoes , font ">
+                    CANCELAR
+                </Button>
                 </FormControl>
             </form>
         </Container>

@@ -17,6 +17,8 @@ import store from './store/store';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import SobreNos from './paginas/sobreNos/SobreNos';
+import Contato from './paginas/contato/Contato';
+import Vitrine from './paginas/vitrine/Vitrine';
 
 
 
@@ -29,10 +31,11 @@ function App() {
         <Navbar />
         <div style={{ minHeight: '100vh' }}>
           <Routes>
-            <Route path="/" element={<Login />} />
+            <Route path="/" element={<Vitrine />} />
             <Route path="/sobreNos" element={<SobreNos />} />
             <Route path="/login" element={<Login />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/contato" element={<Contato />} />
             <Route path="/cadastrousuario" element={<CadastroUsuario />} />
             <Route path="/categoria" element={<ListaCategoria />} />
             <Route path="/produto" element={<ListaProduto />} />

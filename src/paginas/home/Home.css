@@ -1,16 +1,32 @@
-.titulo{
+.titulo {
     color: blue;
     text-align: center;
-   }
+}
 
-.img{
-width: 500px;
-height: 300px;
-display: block;
-margin: 0 auto;
+.img {
+    width: 500px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
 
 }
 
-.text-decorator-none{
+.text-decorator-none {
     text-decoration: none;
+}
+
+.tx3 {
+    color: #BD8A44 !important;
+    font-weight: bold !important;
+}
+
+.tx4 {
+    color: #BD8A44 !important;
+    
+}
+
+.nvpost{
+    border-color: white !important;
+    background-color: #6B8E23 !important;
+    color: white !important;
 }

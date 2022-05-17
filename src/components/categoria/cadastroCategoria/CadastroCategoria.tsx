@@ -110,11 +110,14 @@ function CadastroCategoria() {
     return (
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
-            <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos1'> Cadastrar  </Typography>
+            <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='text1 , font '> Cadastrar  </Typography>
                         <TextField value={categoria.nomeCategoria} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='nomeCategoria' label='nomeCategoria' variant='outlined' name='nomeCategoria' margin='normal' fullWidth />
                         <TextField value={categoria.descricaoCategoria} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='descricaoCategoria' label='descricaoCategoria' variant='outlined' name='descricaoCategoria' margin='normal' fullWidth />
-                <Button type="submit" variant="contained" color="primary">
+                <Button type="submit" variant="contained" className="botoes1 , font ">
                     Finalizar
+                </Button>
+                <Button type="submit" variant="contained" className="botoes , font , org  ">
+                    CANCELAR
                 </Button>
             </form>
         </Container>

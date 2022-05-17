@@ -1,0 +1,36 @@
+.imgVitrine {
+    align-items: center !important;
+
+}
+
+.in {
+    background-image: url(https://i.imgur.com/j2DFr51.jpg);
+    background-repeat: no-repeat;
+    width: 50vh;
+    min-height: 110vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.fund {
+    background-color: white;
+}
+
+.tst {
+    font-family: Georgia;
+    text-decoration: none !important;
+}
+
+.txt1V {
+    color: #a08228 !important;
+    font-size: xx-large;
+    text-align: center;
+    padding: 25px;
+    text-decoration: none !important;
+}
+
+.borda {
+    border: 5px solid #abbb72;
+    padding: 90px;
+}

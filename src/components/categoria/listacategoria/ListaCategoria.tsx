@@ -53,11 +53,11 @@ function ListaCategoria() {
       <Box m={2} >
         <Card variant="outlined">
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="textSecondary" gutterBottom className='font'>
               Categoria
             </Typography>
-            <Typography variant="h5" component="h2">
-             {categoria.descricaoCategoria}
+            <Typography variant="h5" component="h2" className='font' >
+             {categoria.nomeCategoria}
             </Typography>
           </CardContent>
           <CardActions>
@@ -65,14 +65,14 @@ function ListaCategoria() {
 
               <Link to={`/formularioCategoria/${categoria.id}`} className="text-decorator-none">
                 <Box mx={1}>
-                  <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                  <Button variant="contained" className="botoes , marginLeft , font" size='small' >
                     atualizar
                   </Button>
                 </Box>
               </Link>
               <Link to={`/deletarCategoria/${categoria.id}`} className="text-decorator-none">
                 <Box mx={1}>
-                  <Button variant="contained" size='small' color="secondary">
+                  <Button variant="contained" size='small' className="botoes1 , font ">
                     deletar
                   </Button>
                 </Box>

@@ -1,10 +1,10 @@
-.txt1{
+.txt1 {
     font-weight: bold !important;
-    color: #8ea10c;
+    color: #61521b !important;
     text-decoration: none;
 }
 
-.img{
+.img {
     background-image: url(https://i.imgur.com/j2DFr51.jpg);
     background-repeat: no-repeat;
     width: 100vh;
@@ -16,4 +16,29 @@
 
 .text-decorator-none {
     text-decoration: none;
-    }
+}
+
+.btnLo {
+    background-color: #99822c !important;
+    color: white !important;
+
+}
+
+.btn2Lo {
+    color: #61521b !important;
+    color: white !important;
+}
+
+.edi {
+    color: #61521b !important;
+
+}
+
+.edi1 {
+    color: #61521b !important;
+    font-family: monospace !important;
+}
+
+.font {
+    font-family: monospace !important;
+}
