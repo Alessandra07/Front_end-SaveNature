@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Grid, Typography } from '@material-ui/core';
 import './Vitrine.css';
+import { Link } from 'react-router-dom';
 
 function Vitrine(): JSX.Element {
 
@@ -17,9 +18,9 @@ function Vitrine(): JSX.Element {
                                 Nosso maior objetivo é apoiar a conscientização a população para pautas voltadas ao desmatamento, descarte de materiais em locais inadequados e reciclagem! </h2>
                         </Box>
                         <Box>
-                            <a href='/login' >
+                            <Link to = "/login" >
                                 <Typography variant='subtitle1' gutterBottom align='center' className='txt1 , font '>DESEJA CONHEÇER NOSSO E-COMMERCE ? CLIQUE AQUI !</Typography>
-                            </a>
+                            </Link>
                         </Box>
                     </Box>
 
